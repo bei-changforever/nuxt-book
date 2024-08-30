@@ -1,0 +1,49 @@
+:root {
+    --color: #243746;
+    --color-primary: #158876;
+    --color-secondary: #0e2233;
+    --bg: #f3f4f5;
+    --bg-secondary: #fff;
+    --border-color: #ddd;
+}
+
+/* 
+nuxt/color-model 会根据夜间模式或日间模式分别将 .dark-mode 和 .light-mode 等等模式 .${模式}-mode 添加到 <html>标签上
+
+.dark-mode 等价于夜间模式下的 :root
+
+同理 .light-mode 等价于日间模式下的 :root
+
+ */
+
+.dark {
+    --color: #ebf4f1;
+    --color-primary: #41b38a;
+    --color-secondary: #fdf9f3;
+    --bg: #091a28;
+    --bg-secondary: #2f3b46;
+    --border-color: #0d2538;
+}
+
+.sepia {
+    --color: #433422;
+    --color-primary: #70593c;
+    --color-secondary: #0e2233;
+    --bg: #f1e7d0;
+    --bg-secondary: #c4b79b;
+    --border-color: #ded0bf;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+        Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: var(--bg) !important;
+    /* background-color: #091a28; */
+    color: var(--color) !important;  
+    /* color: #ebf4f1; */
+    transition: background-color .3s;  
+}
+
+a {
+    color: var(--color-primary);
+}
